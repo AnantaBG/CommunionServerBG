@@ -51,18 +51,11 @@ async function run() {
     });
 
 
-
-
-    // app.get('/allTasks', async (req, res) => {
-    //   const result = await allTasks.find().toArray();
-    //   res.send(result);
-    // });
-
     console.log("Pinged your deployment. You successfully connected Communion to MongoDB!");
 
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
-    process.exit(1); // Exit if DB connection fails
+    process.exit(1); 
   }
 }
 
